@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rgukt Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="webpage.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script type="text/javascript">
+    function myFunction() {
+  
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+/* Set the width of the sidebar to 0 (hide it) */
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+
+  </head>
+  <body bgcolor="black">
+    <a href="#" id="top"></a>
+    <div class="rgukt">
+      <img
+        class="logo"
+        src="rk.jpg"
+        title="Ravikiran"
+      />
+      <b>Ragiv Gandhi University Of Knowledge And Technologies</b>
+    </div>
+
+    <div class="nav">
+      <img src="g.jpg" title="Rgukt" height="40px" width="40px" style="float:right;">
+      <ul>
+        <li>
+          <a href="#"
+            ><i class="fa-solid fa-house" style="color: black;"></i>Home</a
+          >
+          <div class="sub">
+            <ul>
+              <li><a href="#">Education System</a></li>
+              <li><a href="#">Campus-Life</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fa-solid fa-user" style="color: black;"></i>About</a
+          >
+          <div class="sub">
+            <ul>
+              <li><a href="#">College</a></li>
+              <li><a href="#">Academics</a></li>
+              <li><a href="#">Cultures</a></li>
+              <li><a href="#">Alumini</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="Validation.html"
+            ><i class="	fa fa-file-text"style="color: black;"></i>Login
+            Form</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fa-solid fa-building-columns" style="color: black;"></i
+            >Branch</a
+          >
+          <div class="sub">
+            <ul>
+              <li class="over">
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-circle-chevron-right"
+                    style="color: #ff7082"
+                  ></i
+                  >Cse</a
+                >
+                <div class="subb">
+                  <ul>
+                    <li><a href="#">Faculty</a></li>
+                    <li><a href="#">Student</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="over">
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-circle-chevron-right"
+                    style="color: #ff7082"
+                  ></i
+                  >Ece</a
+                >
+                <div class="subb">
+                  <ul>
+                    <li><a href="#">Faculty</a></li>
+                    <li><a href="#">Student</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="over">
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-circle-chevron-right"
+                    style="color: #ff7082"
+                  ></i
+                  >Eee</a
+                >
+                <div class="subb">
+                  <ul>
+                    <li><a href="#">Faculty</a></li>
+                    <li><a href="#">Student</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="over">
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-circle-chevron-right"
+                    style="color: #ff7082"
+                  ></i
+                  >Mech</a
+                >
+                <div class="subb">
+                  <ul>
+                    <li><a href="#">Faculty</a></li>
+                    <li><a href="#">Student</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="over">
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-circle-chevron-right"
+                    style="color: #ff7082"
+                  ></i
+                  >Civil</a
+                >
+                <div class="subb">
+                  <ul>
+                    <li><a href="#">Faculty</a></li>
+                    <li><a href="#">Student</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="over">
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-circle-chevron-right"
+                    style="color: #ff7082"
+                  ></i
+                  >Chem</a
+                >
+                <div class="subb">
+                  <ul>
+                    <li><a href="#">Faculty</a></li>
+                    <li><a href="#">Student</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="map.html"
+            ><i class="fa-solid fa-phone" style="color: black;"></i>Contact</a>
+        </li>
+      </ul>
+    </div> 
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">&#9776; </button>
+
+    <div class="notify">
+      <p style="background-color: white;text-align: center;font-size: 2rem;" >Notification</p>
+    
+      <p id="demo"><marquee>exam timetable</marquee></p>
+      <p id="demo"><marquee>CSE Notifications</marquee></p>
+      <p id="demo"><marquee>ECE Notifications</marquee> </p>
+      <p id="demo"><marquee>MEC Notifications</marquee> </p>
+      <p id="demo"><marquee>EEE Notifications</marquee> </p>
+     
+    </div>
+
+    <div>
+ 
+    <div style="float:left" class="div1">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">Name</th>
+    <th style="width:40%;">ID</th>
+  </tr>
+  <tr>
+    <td>Steve Jobs</td>
+    <td>N181010</td>
+  </tr>
+  <tr>
+    <td>Ravi kiran</td>
+    <td>N180085</td>
+  </tr>
+  <tr>
+    <td>Prabhas</td>
+    <td>N181000</td>
+  </tr>
+  <tr>
+    <td>Elon Musk</td>
+    <td>N181123</td>
+  </tr>
+</table>
+    </div>
+    <iframe src="image_slider.html" id="image" name="m" style="width: 742px;height: 70vh;float: left;"></iframe>
+    </div>
+    <footer>
+      <p class="vcc">
+        View Count:
+        <a href="https://www.hitwebcounter.com" target="_blank">
+          <img
+            src="https://hitwebcounter.com/counter/counter.php?page=8014147&style=0019&nbdigits=5&type=page&initCount=0"
+            title="Free Counter"
+            alt="web counter"
+            height="20px"
+        /></a>
+      </p>
+      <p>
+        #author-->RK<a href="https://www.rgukt.in/" target="_blank"
+          >@RGUKTN</a
+        >
+      </p>
+      <a href="#top"
+        ><img
+          id="sci"
+          title="Move to Head Section"
+          src="download.png"
+          align="right"
+          width="70px"
+          height="35px"
+      /></a>
+    </footer>
+    
+  </body>
+</html>
